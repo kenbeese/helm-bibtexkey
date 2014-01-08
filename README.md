@@ -14,7 +14,6 @@ Moreover, please write following setting to your `~/.emacs`
 ```lisp
 (add-to-list 'load-path "/path/to/this/filedirectory")
 (require 'helm-bibtexkey)
-(setq helm-bibtexkey-parser "/path/to/this/filedirectory/bibtexkey_source.py")
 (setq helm-bibtexkey-filelist '("/path/to/bibtexfile1" "/path/to/bibtexfile2"))
 ```
 
