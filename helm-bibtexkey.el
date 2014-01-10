@@ -24,9 +24,10 @@
 
 (require 'helm)
 
-(defvar helm-bibtexkey-parser
-  "/path/to/bibtexkey_source.py"
-  "Bibtexkey parser path")
+(defvar helm-bibtexkey-parser-program
+  (let ((current (or load-file-name (buffer-file-name))))
+    (expand-file-name "bibtexkey_source.py" (file-name-directory current)))
+  "Bibtexkey parser path.")
 
 (defvar helm-bibtexkey-filelist
   '()
@@ -39,7 +40,7 @@
     (action . (("Insert" . insert)))))
 
 (defun helm-bibtexkey-candidates ()
-  (let ((command (concat helm-bibtexkey-parser " "
+  (let ((command (concat helm-bibtexkey-parser-program " "
                          (mapconcat 'identity helm-bibtexkey-filelist " "))))
     (split-string (shell-command-to-string command) "\n")))
 
