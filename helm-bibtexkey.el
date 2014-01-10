@@ -3,6 +3,8 @@
 ;; Copyright (C) 2014  TAKAGI Kentaro <kentaro0910@gmail.com>
 
 ;; Author: TAKAGI Kentaro <kentaro0910@gmail.com>
+;; URL: https://github.com/kenbeese/helm-bibtexkey
+;; Package-Requires: ((helm "1.5.8"))
 ;; Keywords: bib, tex
 
 ;; This program is free software; you can redistribute it and/or
