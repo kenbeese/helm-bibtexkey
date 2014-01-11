@@ -21,7 +21,16 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
+
+;; Please install pybtex which is python bibtex parser.
+;; For example, `sudo easy_install pybtex`.
+
+;;; Installation:
+
+;; (add-to-list 'load-path "/path/to/this/filedirectory")
+;; (require 'helm-bibtexkey)
+;; (setq helm-bibtexkey-filelist '("/path/to/bibtexfile1" "/path/to/bibtexfile2"))
+
 ;;; Code:
 
 (require 'helm)
@@ -59,7 +68,9 @@
     (setq description (match-string 2 arg))
     (cons description key)))
 
+;;;###autoload
 (defun helm-bibtexkey ()
+  "`helm' for bibtexkey."
   (interactive)
   (helm-other-buffer '(helm-source-bibtexkey) "*helm-bibtex*"))
 
