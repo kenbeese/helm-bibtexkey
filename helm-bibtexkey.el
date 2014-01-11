@@ -35,7 +35,7 @@
   '()
   "List of bibtexkey filepath.")
 
-(setq helm-source-bibtexkey
+(defvar helm-source-bibtexkey
   '((name . "bibtexkey")
     (candidates . helm-bibtexkey-candidates)
     (candidate-transformer . helm-bibtexkey-candidates-transformer)
