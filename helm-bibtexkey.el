@@ -1,8 +1,8 @@
 ;;; helm-bibtexkey.el --- Bibtexkey source for helm
 
-;; Copyright (C) 2014  TAKAGI Kentaro <kentaro0910@gmail.com>
+;; Copyright (C) 2014  TAKAGI Kentaro <kentaro0910_at_gmail.com>
 
-;; Author: TAKAGI Kentaro <kentaro0910@gmail.com>
+;; Author: TAKAGI Kentaro <kentaro0910_at_gmail.com>
 ;; URL: https://github.com/kenbeese/helm-bibtexkey
 ;; Package-Requires: ((helm "1.5.8"))
 ;; Keywords: bib, tex
